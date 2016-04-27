@@ -1,6 +1,6 @@
 package ar.edu.unlam.basica2;
 
-public class Cuenta {
+public class Cuenta{
 	private Double saldo;
 
 	public Cuenta(Double saldo){
