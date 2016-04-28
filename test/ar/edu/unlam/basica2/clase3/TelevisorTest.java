@@ -2,7 +2,7 @@ package ar.edu.unlam.basica2.clase3;
 
 import org.junit.Test;
 
-import ar.edu.unalm.basica2.clase3.Televisor;
+import ar.edu.unlam.basica2.clase3.Televisor;
 
 import static org.junit.Assert.*;
 

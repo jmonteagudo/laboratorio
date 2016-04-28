@@ -1,4 +1,4 @@
-package ar.edu.unalm.basica2.clase3;
+package ar.edu.unlam.basica2.clase3;
 
 public class Televisor {
 	
