@@ -79,18 +79,13 @@ public class Cuenta{
 		if(obj == null){
 			return false;
 		}
-		
-		if(obj instanceof Cuenta){
-			cuentaAComparar = (Cuenta) obj;
-			if(this.numero == cuentaAComparar.getNumero() &&  
-				this.apellidoTitular.equals(cuentaAComparar.getApellidoTitular()) && 
-				this.nombreTitular.equals(cuentaAComparar.getNombreTitular())){
-				
-				return true;
-			}
-			else{
-				return false;
-			}
+
+		cuentaAComparar = (Cuenta) obj;
+		if(this.numero == cuentaAComparar.getNumero() &&  
+			this.apellidoTitular.equals(cuentaAComparar.getApellidoTitular()) && 
+			this.nombreTitular.equals(cuentaAComparar.getNombreTitular())){
+			
+			return true;
 		}
 		else{
 			return false;
