@@ -1,4 +1,4 @@
-package ar.edu.unlam.basica2.clase5;
+package ar.edu.unlam.basica2.clase6;
 
 public class CuentaCorriente extends Cuenta {
 
@@ -13,10 +13,9 @@ public class CuentaCorriente extends Cuenta {
 	}
 	
 	public CuentaCorriente(Double saldoInicial){
-		super(saldoInicial);	
+		super(saldoInicial);
 		sobregiro = 300.0;
 	}
-	
 	// Sobreescritura de método
 	public Double extraerDinero(Double importeARetirar){
 		Double importeRetirado;

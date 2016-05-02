@@ -208,5 +208,4 @@ public class AlumnoTest {
 		assertEquals(Estado.APROBADO, estadoDelAlumno);
 
 	}
-
 }

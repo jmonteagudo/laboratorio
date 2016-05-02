@@ -197,5 +197,4 @@ public class Alumno {
 	public static void habilitarDiaDeClase(){
 		Alumno.CANTIDAD_DE_CLASES_BRINDADAS++;
 	}
-
 }

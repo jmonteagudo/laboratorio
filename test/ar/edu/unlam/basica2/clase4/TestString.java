@@ -21,5 +21,19 @@ public class TestString {
 		
 		assertEquals(cadena1, cadena2);
 	}
+	
+	@Test
+	public void testMetodoEquals() {
+		String cadena1 = "Cadena";
+		String cadena2 = "Cadena";
+	
+		
+		if(cadena1.equals(cadena2)){
+			System.out.println("Las cadenas son iguales");
+		}
+		else{
+			System.out.println("Las cadenas son distintas");
+		}
+	}
 
 }
