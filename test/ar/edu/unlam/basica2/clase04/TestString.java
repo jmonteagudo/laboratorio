@@ -1,4 +1,4 @@
-package ar.edu.unlam.basica2.clase4;
+package ar.edu.unlam.basica2.clase04;
 
 import static org.junit.Assert.*;
 

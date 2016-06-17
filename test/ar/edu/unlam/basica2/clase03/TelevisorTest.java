@@ -1,8 +1,8 @@
-package ar.edu.unlam.basica2.clase3;
+package ar.edu.unlam.basica2.clase03;
 
 import org.junit.Test;
 
-import ar.edu.unlam.basica2.clase3.Televisor;
+import ar.edu.unlam.basica2.clase03.Televisor;
 
 import static org.junit.Assert.*;
 

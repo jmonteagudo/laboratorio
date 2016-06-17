@@ -1,10 +1,10 @@
-package ar.edu.unlam.basica2.clase4;
+package ar.edu.unlam.basica2.clase05;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import ar.edu.unlam.basica2.clase4.Cuenta;
+import ar.edu.unlam.basica2.clase05.Cuenta;
 
 public class TestCuenta {
 

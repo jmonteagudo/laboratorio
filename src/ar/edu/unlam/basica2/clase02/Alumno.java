@@ -1,4 +1,4 @@
-package ar.edu.unlam.basica2.clase2;
+package ar.edu.unlam.basica2.clase02;
 
 public class Alumno {
 	

@@ -1,7 +1,10 @@
-package ar.edu.unlam.basica2.clase2;
+package ar.edu.unlam.basica2.clase02;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+
+import ar.edu.unlam.basica2.clase02.Alumno;
+import ar.edu.unlam.basica2.clase02.Estado;
 
 public class AlumnoTest {
 	

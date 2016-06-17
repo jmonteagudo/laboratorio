@@ -1,4 +1,4 @@
-package ar.edu.unlam.basica2.clase6;
+package ar.edu.unlam.basica2.clase06;
 
 public class Cuenta{
 	
@@ -74,6 +74,7 @@ public class Cuenta{
 	}
 	
 	public boolean equals(Object obj){
+		
 		Cuenta cuentaAComparar;
 		
 		if(obj == null){
@@ -81,10 +82,7 @@ public class Cuenta{
 		}
 
 		cuentaAComparar = (Cuenta) obj;
-		if(this.numero == cuentaAComparar.getNumero() &&  
-			this.apellidoTitular.equals(cuentaAComparar.getApellidoTitular()) && 
-			this.nombreTitular.equals(cuentaAComparar.getNombreTitular())){
-			
+		if(this.numero == cuentaAComparar.getNumero()){
 			return true;
 		}
 		else{
@@ -92,7 +90,7 @@ public class Cuenta{
 		}
 	}
 	
-	public int hashCode(){
+	/*public int hashCode(){
 		return numero;
-	}
+	}*/
 }

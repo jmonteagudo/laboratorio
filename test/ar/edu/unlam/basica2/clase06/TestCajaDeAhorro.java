@@ -1,8 +1,10 @@
-package ar.edu.unlam.basica2.clase6;
+package ar.edu.unlam.basica2.clase06;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import ar.edu.unlam.basica2.clase06.CajaDeAhorro;
 
 public class TestCajaDeAhorro {
 

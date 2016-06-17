@@ -1,4 +1,4 @@
-package ar.edu.unlam.basica2.clase5;
+package ar.edu.unlam.basica2.clase05;
 
 public class CuentaCorriente extends Cuenta {
 

@@ -1,4 +1,4 @@
-package ar.edu.unlam.basica2.clase2;
+package ar.edu.unlam.basica2.clase02;
 
 public enum Estado{INSCRIPTO, CURSANDO, PROMOCIONADO, PENDIENTE_DE_RENDICION_DEL_FINAL, APROBADO, AUSENTE, DESAPROBADO};
 /*
