@@ -14,18 +14,19 @@ public class TestManejarNullPointerException {
 		zoologicoDeMendoza = TestNaturaleza.ingresarAnimales();
 		
 		System.out.println("Los animales en este zoologico son:");
-		for(Animal a:zoologicoDeMendoza){
-			try{
+		try{
+			for(Animal a:zoologicoDeMendoza){
 				System.out.println(a.toString());
-			}catch(NullPointerException e){
-				System.err.println("**** El zoologico no está completo *****");
-			}catch(Exception e){
-				System.err.println("Excepción no determinada");
-			}finally{
-				// Bloque de código que se ejecuta siempre
-				// Ocurra la excepción o no.
-				// Cerrar archivos abiertos, cerrar la conexión con la base de datos
 			}
+		}catch(NullPointerException e){
+			System.err.println("**** El zoologico no está completo *****");
+		}catch(Exception e){
+			System.err.println("Excepción no determinada");
+		}finally{
+			// Bloque de código que se ejecuta siempre
+			// Ocurra la excepción o no.
+			// Cerrar archivos abiertos, cerrar la conexión con la base de datos
+			System.out.println("Chau");
 		}
 	}
 }

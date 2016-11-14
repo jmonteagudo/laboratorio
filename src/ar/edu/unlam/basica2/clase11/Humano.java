@@ -15,12 +15,12 @@ public class Humano extends Omnivoro implements Caminador{
 	}
 	
 	public void morir(){
-		System.out.println("Ceremonias previas");
+		System.out.println("Preparar ceremonias posteriores");
 		super.morir();
 	}
 	
 	public void caminar(){
-		System.out.println("Humano. Caminar");
+		System.out.println("Humano. Caminar: erguido y en dos patas");
 	}
 	
 	public String toString(){

@@ -7,6 +7,10 @@ public abstract class Mamifero extends Vertebrado {
 	}
 	
 	public void nacer() {
-		System.out.println("Mamifero. Nacer");
+		System.out.println("El nuevo mamifero deja el utero y sale al exterrior");
 	}
+	
+	/*public void comer(){
+		System.out.println("Tomando teta");
+	}*/
 }

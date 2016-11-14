@@ -5,16 +5,16 @@ public abstract class Vertebrado extends Animal{
 	private String tronco;
 	private String extremidades;
 	
-	public void reproducir(){
-		System.out.println("Vertebrados.Reproducir");
-	}
-	
 	public Vertebrado(String cabeza, String tronco, String extremidades){
 		this.cabeza = cabeza;
 		this.tronco = tronco;
 		this.extremidades = extremidades;
 	}
 
+	public void reproducir(){
+		System.out.println("Vertebrado. Macho copula hembra");
+	}
+	
 	public String getCabeza() {
 		return cabeza;
 	}

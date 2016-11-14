@@ -18,13 +18,14 @@ public class Alumno {
 	
 	public Alumno(){
 		this.nombre = "";
-		this.edad = 0;
+		this.edad = 17;
 		this.cantidadAsistencias = 0;
 		this.notasParciales = new Float[3];
 		this.notasFinales = new Float[5];
 		this.estadoDelAlumnoEnLaMateria = Estado.INSCRIPTO;
 	}
 	
+	// Sobrecargo el constructor
 	public Alumno(String nombre, int edad){
 		this.nombre = nombre;
 		this.edad = edad;
@@ -34,6 +35,8 @@ public class Alumno {
 		this.estadoDelAlumnoEnLaMateria = Estado.INSCRIPTO;
 	}
 
+	//Modificador Devuelve NombreMetodo (Parametros)
+	//public String getNombre();
 	public String getNombre() {
 		return nombre;
 	}
@@ -108,6 +111,12 @@ public class Alumno {
 	public void rendirParcial(int numeroParcial, float notaParcial){
 		notasParciales[numeroParcial-1] = new Float(notaParcial);
 	}
+	
+	public void rendirPrimerParcial(float notaParcial){
+		notasParciales[0]=notaParcial;
+	}
+	
+	
 	
 	public Float getNotaParcial(int numeroParcial){
 		return notasParciales[numeroParcial];

@@ -51,19 +51,20 @@ public class TestCollection {
 	
 	@Test
 	public void testRecorrerUnaLista(){
-		//List coleccion = new ArrayList();
-		
+			
 		ArrayList<Animal> veterinaria = new ArrayList<Animal>();
-		veterinaria.add(new Pez("cabeza", "tronco", "extremidades"));
+		Animal paciente = new Pez("cabeza", "tronco", "extremidades");
+		veterinaria.add(paciente);
 		for(int i=0; i<100; i++){
 			veterinaria.add(TestNaturaleza.crearAnimales());
 		}
+		paciente = new Reptil("Cabeza agregada despues del null", "", "");
+		veterinaria.add(paciente);
 		veterinaria.add(null);
-		veterinaria.add(new Reptil("Cabeza agregada despues del null", "", ""));
-		Iterator<Animal> mascota = veterinaria.iterator();
-		while(mascota.hasNext()){
+		Iterator<Animal> mascotas = veterinaria.iterator();
+		while(mascotas.hasNext()){
 			try{
-				System.out.println((mascota.next()).toString());
+				System.out.println((mascotas.next()).toString());
 			}catch(NullPointerException e){
 				System.err.println("Se escapó la tortuga");
 			}

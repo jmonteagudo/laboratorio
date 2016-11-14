@@ -92,4 +92,8 @@ public class Triangulo extends Figura{
 	public void dibujarFigura(){
 		System.out.println("Se dibuja un triangulo con un area de " + calcularElArea() + " y un perímetro de " + calcularElPerimetro());
 	}
+	
+	public Double getLadoA(){
+		return ladoA;
+	}
 }

@@ -8,7 +8,7 @@ public class Omnivoro extends Mamifero {
 
 	@Override
 	public void comer() {
-		System.out.println("Mamifero. Comer cualquier cosa");
+		System.out.println("Omnivoro. Comer cualquier cosa");
 	}
 
 	public String toString(){

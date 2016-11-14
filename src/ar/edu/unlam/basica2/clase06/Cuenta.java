@@ -52,19 +52,13 @@ public class Cuenta{
 	}
 	
 	public Double extraerDinero(Double importeARetirar){
-		Double importeRetirado;
-		
 		if(importeARetirar<=this.saldo){
-			saldo-=importeARetirar;
-			importeRetirado = importeARetirar;
+			this.saldo -= importeARetirar;
+			return importeARetirar;
+		}else{
+			return 0.0;
 		}
-		else{
-			importeRetirado = 0.0D;
-		}
-		
-		return importeRetirado;
 	}
-	
 	public Double consultarSaldo(){
 		return (getSaldo());
 	}
