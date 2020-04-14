@@ -36,7 +36,8 @@ public class Circulo extends Figura {
 	}
 	
 	public void dibujarFigura(){
-		System.out.println("Se dibuja un circulos con un area de " + calcularElArea() + " y un perímetro de " + calcularElPerimetro());
+		System.out.println("Se dibuja un circulos con un area de " + calcularElArea() 
+		+ " y un perímetro de " + calcularElPerimetro());
 	}
 
 	@Override
@@ -62,5 +63,8 @@ public class Circulo extends Figura {
 		} else if (!radio.equals(other.radio))
 			return false;
 		return true;
+	}
+	public void polimorfismo (){
+		System.out.println("imprimos circulo");
 	}
 }

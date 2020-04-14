@@ -75,7 +75,8 @@ public class Triangulo extends Figura{
 	}
 	
 	private Double calcularT(){
-		return(0.5*Math.sqrt((ladoA+ladoB-ladoC)*(ladoA-ladoB+ladoC)*(-ladoA+ladoB+ladoC)*(ladoA+ladoB+ladoC)));
+		return(0.5*Math.sqrt((ladoA+ladoB-ladoC)*(ladoA-ladoB+ladoC)
+				*(-ladoA+ladoB+ladoC)*(ladoA+ladoB+ladoC)));
 	}
 	
 	public Double calcularElArea(){

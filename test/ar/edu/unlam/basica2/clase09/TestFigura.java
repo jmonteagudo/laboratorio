@@ -10,11 +10,12 @@ import ar.edu.unlam.basica2.clase09.Rectangulo;
 import ar.edu.unlam.basica2.clase09.Triangulo;
 
 public class TestFigura {
-	/*
+	
 	public void dibujarUnaFigura(Figura figuraADibujar){
 		figuraADibujar.dibujarFigura();
+					
 		if(figuraADibujar instanceof Triangulo){
-			System.out.println(((Triangulo)figuraADibujar).getLadoA());
+			System.out.println("LADO A="+((Triangulo)figuraADibujar).getLadoA());
 		}
 	}
 	
@@ -52,14 +53,20 @@ public class TestFigura {
 	@Test
 	public void dibujarUnaFigura() {
 		Figura figura = new Circulo(10.0D);
-		
-		Circulo circulo = (Circulo) figura;
+		System.out.println("imprimo metodo abstracto " +figura.calcularElArea());
+		((Figura)figura).polimorfismo();
+//		
+//        Figura figura2 = new Triangulo(10.0, 7.0, 7.14, 90.0, 45.0, 90.0);
+//		((Triangulo)figura2)
+        Circulo circulo = (Circulo) figura;
+				
 		circulo.setRadio(5.0);
 		circulo.setColor("verde");
 		figura.setColor("rojo");
 		
 		System.out.println(circulo.getColor());
 		assertEquals(new Double(78.54), figura.calcularElArea(), 0.01);
+		//System.out.println(" ver que pasa "+((Triangulo)figura).calcularElArea());
 	}	
 	
 	@Test
@@ -91,7 +98,6 @@ public class TestFigura {
 			dibujarUnaFigura(f);
 		}
 	}
-*/	
 	@Test
 	public void compararCirculos(){
 		Circulo c1 = new Circulo(3.14);
@@ -107,4 +113,50 @@ public class TestFigura {
 */
 		assertEquals(c1, c2);
 	}
+	@Test
+	public void verAsignacionesPolimorficas(){
+		
+		System.out.println("-------------------------------------");
+		System.out.println("test polimorfismo");
+		Figura miFigura;
+		Circulo miCirculo = new Circulo(10.0);
+		
+		Rectangulo miRectangulo = new Rectangulo(2.0, 3.0);
+		
+		miFigura=miCirculo;
+
+		((Circulo)miFigura).setRadio(8.0);
+		
+		
+//		//Class Exceptions
+//		miFigura.dibujarFigura();
+//		Figura miFigura2;
+//		miFigura2=miCirculo;
+//		miRectangulo=(Rectangulo)miFigura2;
+//		
+//		
+		
+	
+		
+		
+		miFigura=miRectangulo;
+		miFigura.dibujarFigura();
+		System.out.println("-------------------------------------");
+	
+	
+		Circulo miCirculo2 = new Circulo(10.0);
+		
+		Rectangulo miRectangulo2 = new Rectangulo(2.0, 3.0);
+		
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

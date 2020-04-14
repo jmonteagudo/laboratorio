@@ -18,5 +18,8 @@ public abstract class Figura {
 	public abstract Double calcularElArea();
 	public abstract Double calcularElPerimetro();
 	public abstract void dibujarFigura();
+	public void polimorfismo (){
+		System.out.println("imprimo figura");
+	}
 
 }
