@@ -35,9 +35,9 @@ public class Circulo extends Figura {
 		return longitud;
 	}
 	
-	public void dibujarFigura(){
-		System.out.println("Se dibuja un circulos con un area de " + calcularElArea() 
-		+ " y un perímetro de " + calcularElPerimetro());
+	public String dibujarFigura(){
+		return "Se dibuja un circulos con un area de " + calcularElArea() 
+		+ " y un perímetro de " + calcularElPerimetro();
 	}
 
 	@Override

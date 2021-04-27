@@ -90,8 +90,8 @@ public class Triangulo extends Figura{
 		return (this.ladoA + this.ladoB + this.ladoC);
 	}
 	
-	public void dibujarFigura(){
-		System.out.println("Se dibuja un triangulo con un area de " + calcularElArea() + " y un perímetro de " + calcularElPerimetro());
+	public String dibujarFigura(){
+		return "Se dibuja un triangulo con un area de " + calcularElArea() + " y un perímetro de " + calcularElPerimetro();
 	}
 	
 	public Double getLadoA(){

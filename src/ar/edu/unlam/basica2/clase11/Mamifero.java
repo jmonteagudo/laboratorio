@@ -1,6 +1,6 @@
 package ar.edu.unlam.basica2.clase11;
 
-public abstract class Mamifero extends Vertebrado {
+public abstract class Mamifero extends Vertebrado{
 
 	public Mamifero(String cabeza, String tronco, String extremidades){
 		super(cabeza, tronco, extremidades);

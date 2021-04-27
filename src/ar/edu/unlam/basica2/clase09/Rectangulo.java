@@ -36,8 +36,8 @@ public class Rectangulo extends Figura {
 		this.ladoB = altura;
 	}
 	
-	public void dibujarFigura(){
-		System.out.println("Se dibuja un rectángulo con un area de " + calcularElArea() + " y un perímetro de " + calcularElPerimetro());
+	public String dibujarFigura(){
+		return "Se dibuja un rectángulo con un area de " + calcularElArea() + " y un perímetro de " + calcularElPerimetro();
 	}
 
 }

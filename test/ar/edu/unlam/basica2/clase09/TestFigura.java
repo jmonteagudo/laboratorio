@@ -52,22 +52,36 @@ public class TestFigura {
 	
 	@Test
 	public void dibujarUnaFigura() {
-		Figura figura = new Circulo(10.0D);
-		System.out.println("imprimo metodo abstracto " +figura.calcularElArea());
-		((Figura)figura).polimorfismo();
+		
+		Figura actual = new Circulo(10.0D);
+		
+		System.out.println(actual.calcularElArea());
+			
+		actual = new Triangulo(2.0, 2.0, 2.0, 45.0, 45.0, 45.0);
+		
+		System.out.println(actual.calcularElArea());
+		
+		actual = new Rectangulo(6.0, 8.0);
+		
+		System.out.println(actual.calcularElArea());
+		/*
+		
+		
+		System.out.println("imprimo metodo abstracto " +actual.calcularElArea());
+		((Figura)actual).polimorfismo();
 //		
 //        Figura figura2 = new Triangulo(10.0, 7.0, 7.14, 90.0, 45.0, 90.0);
 //		((Triangulo)figura2)
-        Circulo circulo = (Circulo) figura;
+        Circulo circulo = (Circulo) actual;
 				
 		circulo.setRadio(5.0);
 		circulo.setColor("verde");
-		figura.setColor("rojo");
+		actual.setColor("rojo");
 		
 		System.out.println(circulo.getColor());
-		assertEquals(new Double(78.54), figura.calcularElArea(), 0.01);
+		assertEquals(new Double(78.54), actual.calcularElArea(), 0.01);
 		//System.out.println(" ver que pasa "+((Triangulo)figura).calcularElArea());
-	}	
+	*/}	
 	
 	@Test
 	public void queUnMismoObjetoPuedeAdoptarDistintasFormas() {

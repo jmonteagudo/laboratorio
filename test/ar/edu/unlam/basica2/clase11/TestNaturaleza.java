@@ -75,4 +75,14 @@ public class TestNaturaleza {
 		Animal unAnimal = crearAnimales();
 		System.out.println(unAnimal);
 	}
+	
+	@Test
+	public void crearMultiplesAnimal(){
+		Animal unAnimal;
+		for(int i=0; i<10; i++) {
+			unAnimal = crearAnimales();
+			System.out.println(unAnimal);
+		}
+		
+	}
 }
